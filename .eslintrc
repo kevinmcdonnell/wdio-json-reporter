@@ -1,6 +1,139 @@
 {
-  "extends": "standard",
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "globals": {
+    "LearnosityApp": true,
+    "LearnosityAssess": true,
+    "console": true,
+    "require": true,
+    "define": true,
+    "window": true,
+    "document": true,
+    "navigator": true,
+    "setTimeout": true,
+    "Element": true,
+    "clearTimeout": true,
+    "setInterval": true,
+    "clearInterval": true,
+    "module": true,
+    "sinon": true,
+    "describe": true,
+    "fdescribe": true,
+    "xdescribe": true,
+    "it": true,
+    "fit": true,
+    "xit": true,
+    "expect": true,
+    "beforeEach": true,
+    "afterEach": true,
+    "beforeAll": true,
+    "afterAll": true,
+    "spyOn": true
+  },
   "rules": {
-    "indent": [2, 4]
+    "no-eval": 2,
+    "dot-notation": 2,
+    "indent": [
+      2,
+      4,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "curly": [
+      2,
+      "all"
+    ],
+    "guard-for-in": 2,
+    "strict": [
+      2,
+      "function"
+    ],
+    "no-undef": 2,
+    "space-before-function-paren": [
+      2,
+      {"anonymous": "always", "named": "never"}
+    ],
+    "no-empty": 2,
+    "array-bracket-spacing": [
+      2,
+      "never"
+    ],
+    "space-in-parens": [
+      2,
+      "never"
+    ],
+
+    "space-unary-ops": [
+      2,
+      {
+        "words": false,
+        "nonwords": false
+      }
+    ],
+    "no-mixed-spaces-and-tabs": 2,
+    "no-trailing-spaces": 2,
+    "comma-dangle": [
+      2,
+      "never"
+    ],
+    "yoda": [
+      2,
+      "never"
+    ],
+    "no-with": 2,
+    "no-multiple-empty-lines": 2,
+    "space-before-blocks": [
+      2,
+      "always"
+    ],
+    "wrap-iife": ["error", "inside"],
+    "one-var": [
+      2,
+      {
+        "uninitialized": "always",
+        "initialized": "never"
+      }
+    ],
+    "newline-after-var": [
+      2,
+      "always"
+    ],
+    "comma-style": [
+      2,
+      "last"
+    ],
+    "space-infix-ops": 2,
+    "eol-last": 2,
+    "new-cap": 2,
+    "keyword-spacing": [
+      2,
+      {}
+    ],
+    "consistent-this": [
+      2,
+      "self"
+    ],
+    "linebreak-style": [
+      2,
+      "unix"
+    ],
+    "quotes": [
+      2,
+      "single"
+    ],
+    "semi": [
+      2,
+      "always"
+    ],
+    "prefer-const": ["error", {
+        "destructuring": "any",
+        "ignoreReadBeforeAssign": false
+    }]
   }
 }
