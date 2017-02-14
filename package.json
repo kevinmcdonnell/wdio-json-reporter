@@ -1,7 +1,7 @@
 {
-  "name": "wdio-json-reporter",
-  "version": "0.1.1",
-  "description": "A WebdriverIO plugin. Report results in json format.",
+  "name": "wdio-mochawesome-reporter",
+  "version": "0.1.0",
+  "description": "A WebdriverIO plugin. Generate Mochawesome report.",
   "main": "build/reporter.js",
   "scripts": {
     "test": "grunt",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fijijavis/wdio-json-reporter.git"
+    "url": "git+https://github.com/kevinmcdonnell/wdio-json-reporter.git"
   },
   "directories": {
     "lib": "./lib"
@@ -21,14 +21,17 @@
     "webdriverio",
     "wdio",
     "wdio-plugin",
-    "wdio-reporter"
+    "wdio-reporter",
+    "mochawesome",
+    "wdio-mochawesome",
+    "wdio-mochawesome-reporter"
   ],
-  "author": "Jim Davis <jim.davis@kroger.com>",
+  "author": "Kevin McDonnell <kevinmmcdonnell@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fijijavis/wdio-json-reporter/issues"
+    "url": "https://github.com/kevinmcdonnell/wdio-json-reporter/issues"
   },
-  "homepage": "https://github.com/fijijavis/wdio-json-reporter#readme",
+  "homepage": "https://github.com/kevinmcdonnell/wdio-json-reporter#readme",
   "dependencies": {
     "babel-runtime": "^5.8.25",
     "eslint": "^3.15.0",
@@ -54,6 +57,7 @@
     "load-grunt-tasks": "^3.2.0"
   },
   "contributors": [
+    "Kevin McDonnell",
     "Jim Davis"
   ]
 }
